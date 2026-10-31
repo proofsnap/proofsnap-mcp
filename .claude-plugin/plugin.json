@@ -1,0 +1,14 @@
+{
+  "name": "proofsnap",
+  "version": "1.0.0",
+  "description": "Preserve public web pages as signed, timestamped evidence packages, then verify them, compare versions and monitor pages for changes.",
+  "author": {
+    "name": "ProofSnap",
+    "email": "support@getproofsnap.com",
+    "url": "https://getproofsnap.com/index.html"
+  },
+  "homepage": "https://getproofsnap.com/api/mcp.html",
+  "repository": "https://github.com/proofsnap/proofsnap-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "evidence", "web-capture", "legal", "verification"]
+}

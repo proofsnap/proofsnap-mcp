@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.getproofsnap/proofsnap",
+  "title": "ProofSnap",
+  "description": "Capture web pages as signed, timestamped evidence; compare, watch and verify them.",
+  "version": "1.0.0",
+  "websiteUrl": "https://getproofsnap.com/api/mcp.html",
+  "icons": [
+    {
+      "src": "https://getproofsnap.com/proofsnap_logo_socials.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.getproofsnap.com/mcp"
+    }
+  ]
+}

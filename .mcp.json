@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "proofsnap": {
+      "type": "http",
+      "url": "https://mcp.getproofsnap.com/mcp"
+    }
+  }
+}

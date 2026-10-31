@@ -1,0 +1,10 @@
+{
+  "name": "proofsnap-mcp",
+  "version": "1.0.0",
+  "description": "Preserve public web pages as signed, timestamped evidence packages, then verify them, compare versions and monitor pages for changes.",
+  "mcpServers": {
+    "proofsnap": {
+      "httpUrl": "https://mcp.getproofsnap.com/mcp"
+    }
+  }
+}
