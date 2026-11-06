@@ -11,6 +11,8 @@ ProofSnap is a hosted remote MCP server. ProofSnap's own servers load the page, 
 - **Documentation and setup for every app:** https://getproofsnap.com/api/mcp.html
 - **Official MCP Registry:** `com.getproofsnap/proofsnap`
 
+A second public server, `com.getproofsnap/proofsnap-verify` at `https://mcp.getproofsnap.com/verify/mcp`, needs no sign-in and checks, by the SHA-256 of its manifest.json, whether ProofSnap's API or dashboard issued an evidence package.
+
 This repository holds the connection files for the directories and apps listed below. The server itself is a hosted service; its code is not part of this repository.
 
 ## What you can do
@@ -40,8 +42,8 @@ When you connect, sign in with your ProofSnap account and choose **Read only** o
 | Claude (web, desktop, mobile) | Settings > Connectors > Add custom connector, URL `https://mcp.getproofsnap.com/mcp` |
 | Claude Code | `claude mcp add --transport http proofsnap https://mcp.getproofsnap.com/mcp` |
 | ChatGPT | Settings > Apps & Connectors, add a custom app with the server URL (on some plans turn on developer mode under Advanced settings first) |
-| Cursor | [Add to Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=proofsnap&config=eyJ1cmwiOiJodHRwczovL21jcC5nZXRwcm9vZnNuYXAuY29tL21jcCJ9) or use `mcp.json` from this repository |
-| VS Code with GitHub Copilot | [Install in VS Code](vscode:mcp/install?%7B%22name%22%3A%22proofsnap%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.getproofsnap.com%2Fmcp%22%7D) |
+| Cursor | [Add to Cursor](https://cursor.com/en/install-mcp?name=proofsnap&config=eyJ1cmwiOiJodHRwczovL21jcC5nZXRwcm9vZnNuYXAuY29tL21jcCJ9) or use `mcp.json` from this repository |
+| VS Code with GitHub Copilot | [Install in VS Code](https://vscode.dev/redirect/mcp/install?name=proofsnap&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.getproofsnap.com%2Fmcp%22%7D) or add to `.vscode/mcp.json` in your workspace: `{"servers":{"proofsnap":{"type":"http","url":"https://mcp.getproofsnap.com/mcp"}}}` |
 | Codex CLI | `codex mcp add proofsnap --url https://mcp.getproofsnap.com/mcp` then `codex mcp login proofsnap` |
 | Gemini CLI | `gemini extensions install https://github.com/proofsnap/proofsnap-mcp` or `gemini mcp add --transport http proofsnap https://mcp.getproofsnap.com/mcp` |
 | Grok | grok.com/connectors > New Connector > Custom, URL `https://mcp.getproofsnap.com/mcp` |
